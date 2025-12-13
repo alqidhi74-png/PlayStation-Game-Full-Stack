@@ -7,7 +7,7 @@ export const addPlaystation = createAsyncThunk(
   async (gameData, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/saveGame",
+        "https://playstation-game-full-stack-6.onrender.com/saveGame",
         gameData
       );
       return response.data;
@@ -24,7 +24,7 @@ export const getPlaystations = createAsyncThunk(
   "playstation/getPlaystations",
   async (_, thunkAPI) => {
     try {
-      const response = await axios.get("http://localhost:5000/showGame");
+      const response = await axios.get("https://playstation-game-full-stack-6.onrender.com/showGame");
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(
@@ -40,7 +40,7 @@ export const updatePlaystation = createAsyncThunk(
   async (gameData, thunkAPI) => {
     try {
       const response = await axios.put(
-        "http://localhost:5000/updateGame",
+        "https://playstation-game-full-stack-6.onrender.com/updateGame",
         gameData
       );
       return response.data;
@@ -58,7 +58,7 @@ export const deletePlaystation = createAsyncThunk(
   async (gameId, thunkAPI) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/deleteGame/${gameId}`
+        `https://playstation-game-full-stack-6.onrender.com/deleteGame/${gameId}`
       );
       return { id: gameId, data: response.data };
     } catch (error) {
@@ -75,7 +75,7 @@ export const getDownloadedGames = createAsyncThunk(
   async (username, thunkAPI) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/downloads/${username}`
+        `https://playstation-game-full-stack-6.onrender.com/downloads/${username}`
       );
       return response.data;
     } catch (error) {
@@ -91,7 +91,7 @@ export const downloadGame = createAsyncThunk(
   "playstation/downloadGame",
   async ({ username, gameId }, thunkAPI) => {
     try {
-      const response = await axios.post("http://localhost:5000/downloadGame", {
+      const response = await axios.post("https://playstation-game-full-stack-6.onrender.com/downloadGame", {
         username,
         gameId,
       });
@@ -111,7 +111,7 @@ export const deleteDownloadedGame = createAsyncThunk(
   async ({ username, gameId }, thunkAPI) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/deleteDownload/${username}/${gameId}`
+        `https://playstation-game-full-stack-6.onrender.com/deleteDownload/${username}/${gameId}`
       );
       thunkAPI.dispatch(getDownloadedGames(username));
       return response.data;
