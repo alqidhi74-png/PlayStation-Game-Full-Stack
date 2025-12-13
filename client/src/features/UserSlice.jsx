@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getUser = createAsyncThunk("users/getUser", async (udata) => {
   try {
-    const response = await axios.post("http://localhost:5000/login", udata);
+    const response = await axios.post("https://playstation-game-full-stack-6.onrender.com/login", udata);
     return response.data;
   } catch (error) {
     console.log(error);
@@ -16,7 +16,7 @@ export const addUser = createAsyncThunk(
   async (udata, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/register",
+        "https://playstation-game-full-stack-6.onrender.com/register",
         udata
       );
       return response.data;
@@ -33,7 +33,7 @@ export const updateUser = createAsyncThunk(
   async (udata, thunkAPI) => {
     try {
       const response = await axios.put(
-        "http://localhost:5000/updateProfile",
+        "https://playstation-game-full-stack-6.onrender.com/updateProfile",
         udata
       );
       return response.data;
