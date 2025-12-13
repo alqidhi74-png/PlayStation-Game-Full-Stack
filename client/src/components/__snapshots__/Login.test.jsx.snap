@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Match the Login UI snapshot... 1`] = `
+<div>
+  <div
+    class="login-page-light"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="justify-content-center row"
+      >
+        <div
+          class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5"
+        >
+          <div
+            class="login-card"
+          >
+            <div
+              class="login-header"
+            >
+              <h2
+                class="login-title"
+              >
+                Welcome Back! 🎮
+              </h2>
+              <p
+                class="login-subtitle"
+              >
+                Sign in to continue to PlayStation Games
+              </p>
+            </div>
+            <form>
+              <div
+                class="login-form-group mb-3"
+              >
+                <input
+                  class="form-control login-input"
+                  name="email"
+                  placeholder="Email Address"
+                  type="email"
+                />
+              </div>
+              <div
+                class="login-form-group mb-3"
+              >
+                <input
+                  class="form-control login-input"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+              <button
+                class="form-control login-btn btn btn-secondary"
+                type="submit"
+              >
+                🚀 Sign In
+              </button>
+              <div
+                class="login-link-container mb-3"
+              >
+                <a
+                  class="login-link"
+                  data-discover="true"
+                  href="/forgot-password"
+                >
+                  🔑 Forgot Password?
+                </a>
+              </div>
+              <div
+                class="login-footer mb-3"
+              >
+                <label
+                  class="login-footer-label form-label"
+                >
+                  Don't have an account?
+                   
+                  <a
+                    class="login-footer-link"
+                    data-discover="true"
+                    href="/"
+                  >
+                    Sign Up Now
+                  </a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

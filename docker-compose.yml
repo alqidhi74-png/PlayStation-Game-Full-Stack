@@ -1,0 +1,22 @@
+services:
+  server:
+    build: ./server # Build server Docker image
+    ports:
+      - "5000:5000" # Map container port 5000 to host
+    volumes:
+      - ./server:/app # Sync local code with container
+      - /app/node_modules # Keep container node_modules safe
+    environment:
+      - NODE_ENV=development
+    restart: always # Restart if container crashes
+
+  client:
+    build: ./client # Build client Docker image
+    ports:
+      - "5173:5173" # Map Vite port
+    volumes:
+      - ./client:/app # Sync local code with container
+      - /app/node_modules
+    depends_on:
+      - server # Ensure server starts first
+    restart: always

@@ -1,0 +1,141 @@
+/* Add Playstation Page Styles */
+.add-playstation-page-dark,
+.add-playstation-page-light {
+  min-height: 100vh;
+  padding: 2rem 0;
+  padding-top: 120px;
+}
+
+.add-playstation-page-dark {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  background-attachment: fixed;
+}
+
+.add-playstation-page-light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-attachment: fixed;
+}
+
+.add-playstation-card {
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+body.dark-mode .add-playstation-card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .add-playstation-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.add-playstation-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.add-playstation-input,
+.add-playstation-textarea {
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .add-playstation-input,
+body.dark-mode .add-playstation-textarea {
+  background: rgba(30, 41, 59, 0.8);
+  color: #e0e0e0;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+body.light-mode .add-playstation-input,
+body.light-mode .add-playstation-textarea {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-playstation-input:focus,
+.add-playstation-textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  outline: none;
+}
+
+.add-playstation-textarea {
+  resize: vertical;
+}
+
+.add-playstation-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  width: 100%;
+  color: white;
+}
+
+.add-playstation-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.add-playstation-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.add-playstation-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+body.dark-mode .add-playstation-label {
+  color: #e0e0e0;
+}
+
+body.light-mode .add-playstation-label {
+  color: #1a1a1a;
+}
+
+.add-playstation-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.add-playstation-alert {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

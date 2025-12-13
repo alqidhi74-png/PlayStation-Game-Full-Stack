@@ -1,0 +1,159 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Match the Register UI snapshot... 1`] = `
+<div>
+  <div
+    class="register-page-light"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="justify-content-center row"
+      >
+        <div
+          class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6"
+        >
+          <div
+            class="register-card"
+          >
+            <div
+              class="register-header"
+            >
+              <h2
+                class="register-title"
+              >
+                Join Us! 🎮
+              </h2>
+              <p
+                class="register-subtitle"
+              >
+                Create your account and start gaming
+              </p>
+            </div>
+            <form>
+              <div
+                class="register-form-group mb-3"
+              >
+                <input
+                  class="form-control register-input"
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                />
+              </div>
+              <div
+                class="register-form-group mb-3"
+              >
+                <input
+                  class="form-control register-input"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                />
+              </div>
+              <div
+                class="register-form-group mb-3"
+              >
+                <input
+                  class="form-control register-input"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+              <div
+                class="register-form-group mb-3"
+              >
+                <input
+                  class="form-control register-input"
+                  name="dateOfBirth"
+                  placeholder="Date of Birth"
+                  type="date"
+                />
+              </div>
+              <fieldset
+                class="register-gender-group mb-3"
+              >
+                <div
+                  class="register-gender-options"
+                >
+                  <div
+                    class="form-check form-check-inline"
+                    style="margin: 0px;"
+                  >
+                    <input
+                      class="register-radio"
+                      name="gender"
+                      type="radio"
+                      value="Male"
+                    />
+                    <label
+                      class="register-radio-label form-check-label"
+                    >
+                      👨 Male
+                    </label>
+                  </div>
+                  <div
+                    class="form-check form-check-inline"
+                    style="margin: 0px;"
+                  >
+                    <input
+                      class="register-radio"
+                      name="gender"
+                      type="radio"
+                      value="Female"
+                    />
+                    <label
+                      class="register-radio-label form-check-label"
+                    >
+                      👩 Female
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div
+                class="register-form-group form-check"
+              >
+                <input
+                  class="register-checkbox"
+                  name="checkbox"
+                  type="checkbox"
+                />
+                <label
+                  class="register-checkbox-label form-check-label"
+                >
+                  I accept Terms and Conditions
+                </label>
+              </div>
+              <button
+                class="form-control register-btn btn btn-secondary"
+                type="submit"
+              >
+                🚀 Create Account
+              </button>
+              <div
+                class="register-footer mb-3"
+              >
+                <label
+                  class="register-footer-label form-label"
+                >
+                  Already have an account?
+                   
+                  <a
+                    class="register-footer-link"
+                    data-discover="true"
+                    href="/login"
+                  >
+                    Login Now
+                  </a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

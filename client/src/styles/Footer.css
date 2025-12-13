@@ -1,0 +1,61 @@
+/* Footer Styles */
+.footer {
+  backdrop-filter: blur(20px);
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+body.dark-mode .footer {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .footer {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 244, 246, 0.95) 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  padding: 0 1rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+body.dark-mode .footer-text {
+  color: #e0e0e0;
+}
+
+body.light-mode .footer-text {
+  color: #1a1a1a;
+}
+
+.footer-brand {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.footer-subtext {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+}
+
+body.dark-mode .footer-subtext {
+  color: #94a3b8;
+}
+
+body.light-mode .footer-subtext {
+  color: #6b7280;
+}
