@@ -3,10 +3,12 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { configureStore } from "redux-mock-store";
-import AddPlaystation from "./AddPlaystation";
+import AddPlaystation from "../components/AddPlaystation";
 import reducer from "../features/PlaySlice";
 
+// =======================
 // Mock Store
+// =======================
 const mockStore = configureStore([]);
 
 const store = mockStore({

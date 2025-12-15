@@ -1,5 +1,5 @@
 import React from "react";
-import Register from "./Register";
+import Register from "../components/Register";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
