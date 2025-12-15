@@ -1,0 +1,109 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Match AddPlaystation UI snapshot 1`] = `
+<div>
+  <div
+    class="add-playstation-page-light"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="justify-content-center row"
+      >
+        <div
+          class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6"
+        >
+          <div
+            class="add-playstation-card"
+          >
+            <h2
+              class="text-center mb-4 add-playstation-title"
+            >
+              Add PlayStation Game
+            </h2>
+            <form>
+              <div
+                class="mb-3"
+              >
+                <input
+                  class="form-control add-playstation-input"
+                  name="gameCode"
+                  placeholder="Game Code"
+                  type="text"
+                />
+                <p
+                  class="add-playstation-error"
+                />
+              </div>
+              <div
+                class="mb-3"
+              >
+                <input
+                  class="form-control add-playstation-input"
+                  name="title"
+                  placeholder="Title"
+                  type="text"
+                />
+                <p
+                  class="add-playstation-error"
+                />
+              </div>
+              <div
+                class="mb-3"
+              >
+                <input
+                  class="form-control add-playstation-input"
+                  name="releaseYear"
+                  placeholder="Release Year (e.g. 2024)"
+                  type="text"
+                />
+                <p
+                  class="add-playstation-error"
+                />
+              </div>
+              <div
+                class="mb-3"
+              >
+                <input
+                  class="form-control add-playstation-input"
+                  name="gamePicture"
+                  placeholder="Game Picture URL (optional)"
+                  type="text"
+                />
+                <small
+                  class="text-muted"
+                >
+                  Leave blank to use the default cover.
+                </small>
+                <p
+                  class="add-playstation-error"
+                />
+              </div>
+              <div
+                class="mb-3"
+              >
+                <textarea
+                  class="form-control add-playstation-textarea"
+                  name="description"
+                  placeholder="Description"
+                  rows="4"
+                />
+                <p
+                  class="add-playstation-error"
+                />
+              </div>
+              <button
+                class="form-control add-playstation-btn btn btn-secondary"
+                type="submit"
+              >
+                Save Game
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
